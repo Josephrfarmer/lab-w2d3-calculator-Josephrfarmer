@@ -16,73 +16,76 @@ var plus = document.getElementById('plus');
 var clear = document.getElementById('clear');
 var equals = document.getElementById('equals');
 
+var display = document.getElementById('display')
+
 // Event Listeners
 
 one.addEventListener('click', function(e){
-    console.log("1")
+    display.innerHTML= display.innerHTML + ('1');
 })
 
 two.addEventListener('click', function(e){
-    console.log("2")
+    display.innerHTML= display.innerHTML + ('2');
 }) 
 
 three.addEventListener('click', function(e){
-    console.log("3")
+    display.innerHTML= display.innerHTML + ('3');
 }) 
 
 four.addEventListener('click', function(e){
-    console.log("4")
+    display.innerHTML= display.innerHTML + ('4');
 })
 
 five.addEventListener('click', function(e){
-    console.log("5")
+    display.innerHTML= display.innerHTML + ('5');
 })
 
 six.addEventListener('click', function(e){
-    console.log("6")
+    display.innerHTML= display.innerHTML + ('6');
 })
 
 seven.addEventListener('click', function(e){
-    console.log("7")
+    display.innerHTML= display.innerHTML + ('7');
 })
 
 eight.addEventListener('click', function(e){
-    console.log("8")
+    display.innerHTML= display.innerHTML + ('8');
 })
 
 nine.addEventListener('click', function(e){
-    console.log("9")
+    display.innerHTML= display.innerHTML + ('9');
 })
 
 zero.addEventListener('click', function(e){
-    console.log("0")
+    display.innerHTML= display.innerHTML + ('0');
 })
 
 divide.addEventListener('click', function(e){
-    console.log("/")
+    display.innerHTML= display.innerHTML + ('/');
 })
 
 times.addEventListener('click', function(e){
-    console.log("x")
+    display.innerHTML= display.innerHTML + ('*');
 })
 
 minus.addEventListener('click', function(e){
-    console.log("-")
+    display.innerHTML= display.innerHTML + ('-');
 })
 
 decimal.addEventListener('click', function(e){
-    console.log(".")
+    display.innerHTML= display.innerHTML + ('.');
 })
 
 plus.addEventListener('click', function(e){
-    console.log("+")
+    display.innerHTML= display.innerHTML + ('+');
 })
 
 clear.addEventListener('click', function(e){
-    console.log("clear")
+    display.innerHTML=('');
 })
 
 equals.addEventListener('click', function(e){
-    console.log("=")
-})
+    display.innerHTML = eval(display.innerHTML)
+     });
+
 
